@@ -38,7 +38,7 @@ Install NetPyNE
 * `pip install netpyne-ui`
 
 # Test all
-If you want to run it from IDE, preferably start IDE from the console to make sure PYTHONPATH is correctly loaded.
 
-* clone the repository: 
+* If you want to run it from IDE, preferably start IDE from the console to make sure PYTHONPATH is correctly loaded.
+* run `t1.py`
 
