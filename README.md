@@ -8,7 +8,8 @@ Since some libs may have conflicting version with NetPyNE it's better to create 
 * `conda activate neuron`
 
 # NEURON
-Install NEURON
+
+### Install NEURON
 
 * Download `neuron.deb` from https://www.neuron.yale.edu/neuron/download
 * `dpkg -i neuron.deb`
@@ -19,7 +20,7 @@ Install NEURON
   * `from neuron import h, gui`
   * if you see that NEURON has started - it works fine
 
-## Add Python NEURON to PyCharm
+### Add Python NEURON to PyCharm
 
 * Setting -> Project Interpreter -> click on interpreter list and select "Show All" -> Add or select your interpreter -> click "Show paths for the selected interpreter"
 * add the path: /usr/local/nrn/lib/python
