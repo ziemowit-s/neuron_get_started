@@ -22,6 +22,8 @@ Since some libs may have conflicting version with NetPyNE it's better to create 
 
 ### Add Python NEURON to PyCharm
 
+![PyCharm](add_path_to_pycharm.png)
+
 * Setting -> Project Interpreter -> click on interpreter list and select "Show All" -> Add or select your interpreter -> click "Show paths for the selected interpreter"
 * add the path: /usr/local/nrn/lib/python
 
@@ -34,9 +36,5 @@ Install NetPyNE
 # Test all
 
 * If you want to run it from IDE, preferably start IDE from the console to make sure PYTHONPATH is correctly loaded.
-* Download:
-  * http://netpyne.org/_downloads/25249eff85a9f9e5883f5bf9edd3950d/tut1.py 
-  * https://raw.githubusercontent.com/Neurosim-lab/netpyne/master/examples/HHTut/HHTut.py
-* save to the same folder
-* run `tut1.py`
+* run `t1.py`
 
