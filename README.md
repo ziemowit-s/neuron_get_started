@@ -38,3 +38,7 @@ Install NetPyNE
 * If you want to run it from IDE, preferably start IDE from the console to make sure PYTHONPATH is correctly loaded.
 * run `t1.py`
 
+# Documentations
+
+* NEURON: https://www.neuron.yale.edu/neuron/docs
+* NetPyNE: http://netpyne.org/
