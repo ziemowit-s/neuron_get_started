@@ -19,6 +19,11 @@ Install NEURON
   * `from neuron import h, gui`
   * if you see that NEURON has started - it works fine
 
+## Add Python NEURON to PyCharm
+
+* Setting -> Project Interpreter -> click on interpreter list and select "Show All" -> Add or select your interpreter -> click "Show paths for the selected interpreter"
+* add the path: /usr/local/nrn/lib/python
+
 # NetPyNE
 Install NetPyNE
 
@@ -33,9 +38,4 @@ Install NetPyNE
   * https://raw.githubusercontent.com/Neurosim-lab/netpyne/master/examples/HHTut/HHTut.py
 * save to the same folder
 * run `tut1.py`
-
-# Add Python NEURON to PyCharm
-
-* Setting -> Project Interpreter -> click on interpreter list and select "Show All" -> Add or select your interpreter -> click "Show paths for the selected interpreter"
-* add the path: /usr/local/nrn/lib/python
 
