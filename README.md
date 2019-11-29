@@ -1,6 +1,11 @@
 This Repository contains get started instruction how to use NEURON + NetPyNE. 
 This README contains installation instruction. For more information check Wiki page on GitHub.
 
+# Prerequisites
+NEURON > 7.5 requires readline library:
+
+* `sudo apt-get install libreadline6 libreadline6-dev`
+
 # Anaconda
 Since some libs may have conflicting version with NetPyNE it's better to create a new env called neuron with Python 3.6
 
@@ -42,3 +47,7 @@ Install NetPyNE
 
 * NEURON: https://www.neuron.yale.edu/neuron/docs
 * NetPyNE: http://netpyne.org/
+
+# Issues
+* If during compiling *.mod file you have an error: `/usr/bin/ld: cannot find -lreadline`
+* `sudo apt-get install libreadline6 libreadline6-dev`
