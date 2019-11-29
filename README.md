@@ -23,7 +23,6 @@ Install NEURON
 
 * Download `neuron.deb` from https://www.neuron.yale.edu/neuron/download
 * `dpkg -i neuron.deb`
-* `nrnpyenv.sh`
 * add to ~/.bashrc: 
 `export PYTHONPATH="$PYTHONPATH:/usr/local/nrn/lib/python/"`
 * Test NEURON Python in console:
