@@ -62,13 +62,6 @@ Since some libs may have conflicting version with NetPyNE it's better to create 
   * `from neuron import h`
   * if you see that NEURON has started - it works fine
 
-# Add Python NEURON to PyCharm
-
-![PyCharm](add_path_to_pycharm.png)
-
-* Setting -> Project Interpreter -> click on interpreter list and select "Show All" -> Add or select your interpreter -> click "Show paths for the selected interpreter"
-* add the path: /usr/local/nrn/lib/python
-
 # NetPyNE
 Install NetPyNE
 
@@ -86,6 +79,14 @@ Install NetPyNE
 
 * NEURON: https://www.neuron.yale.edu/neuron/docs
 * NetPyNE: http://netpyne.org/
+
+
+# Add Python NEURON to PyCharm
+
+![PyCharm](add_path_to_pycharm.png)
+
+* Setting -> Project Interpreter -> click on interpreter list and select "Show All" -> Add or select your interpreter -> click "Show paths for the selected interpreter"
+* add the path: /usr/local/nrn/lib/python
 
 # Issues
 * for problem with CentOS refer to: https://www.neuron.yale.edu/neuron/download/compile_linux
