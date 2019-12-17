@@ -20,6 +20,8 @@ Since some libs may have conflicting version with NetPyNE it's better to create 
 
 * `conda create --name neuron python=3.6`
 * `conda activate neuron`
+* `pip install matplotlib`
+* `pip install scipy`
 
 # NEURON
 
@@ -27,6 +29,8 @@ Since some libs may have conflicting version with NetPyNE it's better to create 
 
 * Download `*.deb` from https://www.neuron.yale.edu/neuron/download
 * `dpkg -i neuron.deb`
+* add to ~/.bashrc: 
+`export PYTHONPATH="$PYTHONPATH:/usr/local/nrn/lib/python/"`
 
 ## CentOS
 
@@ -48,10 +52,11 @@ Since some libs may have conflicting version with NetPyNE it's better to create 
 * `./configure --prefix=$HOME/nrn --with-iv=/where/is/iv --with-nrnpython=python --with-paranrn`
 * `make`
 * `make install`
-
-## All Linux
 * add to ~/.bashrc: 
-`export PYTHONPATH="$PYTHONPATH:/usr/local/nrn/lib/python/"`
+`export PYTHONPATH="$PYTHONPATH:$HOME/nrn/lib/python/"`
+`export PATH="$PATH:$HOME/nrn/x86_64/bin/"`
+
+## All Linux versions
 * Test NEURON Python in console:
   * `python`
   * `from neuron import h`
@@ -81,5 +86,7 @@ Install NetPyNE
 * NetPyNE: http://netpyne.org/
 
 # Issues
+* for problem with CentOS refer to: https://www.neuron.yale.edu/neuron/download/compile_linux
+
 * If during compiling *.mod file you have an error: `/usr/bin/ld: cannot find -lreadline`
 * `sudo apt-get install libreadline6 libreadline6-dev`
