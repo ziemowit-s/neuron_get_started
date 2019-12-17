@@ -36,10 +36,6 @@ Since some libs may have conflicting version with NetPyNE it's better to create 
 
 * Download `nrn*.tar.gz` from https://neuron.yale.edu/ftp/neuron/versions/
 * extract to `nrn_source`
-### If without GUI
-* `cd nrn_source`
-* `./configure --prefix=$HOME/nrn --without-iv --with-nrnpython=python --with-paranrn`
-### If with GUI
 * Download `iv*.tar.gz` from https://neuron.yale.edu/ftp/neuron/versions/
 * extract to `iv_source`
 * `cd iv_source`
