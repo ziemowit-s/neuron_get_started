@@ -73,6 +73,8 @@ Since some libs may have conflicting version with NetPyNE it's better to create 
 Install NetPyNE
 
 * `pip install netpyne`
+
+## If with GUI
 * `pip install netpyne-ui`
 
 # Test all
