@@ -38,23 +38,23 @@ Since some libs may have conflicting version with NetPyNE it's better to create 
 ### If with GUI
 * Download `iv*.tar.gz` from https://neuron.yale.edu/ftp/neuron/versions/
 * extract to `iv_source`
-* ```cd iv_source
-./configure
-make -j
-sudo make install -j
-cd ..```
+* `cd iv_source`
+* `./configure`
+* `make -j`
+* `sudo make install -j`
+* `cd ..`
 
 * `cd nrn_source`
 * `./configure --prefix=$HOME/nrn --with-iv=/where/is/iv --with-nrnpython=python --with-paranrn`
 * `make`
 * `make install`
 
-
+## All Linux
 * add to ~/.bashrc: 
 `export PYTHONPATH="$PYTHONPATH:/usr/local/nrn/lib/python/"`
 * Test NEURON Python in console:
   * `python`
-  * `from neuron import h, gui`
+  * `from neuron import h`
   * if you see that NEURON has started - it works fine
 
 # Add Python NEURON to PyCharm
