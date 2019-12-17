@@ -43,7 +43,7 @@ Since some libs may have conflicting version with NetPyNE it's better to create 
 * Download `iv*.tar.gz` from https://neuron.yale.edu/ftp/neuron/versions/
 * extract to `iv_source`
 * `cd iv_source`
-* `./configure`
+* `./configure --prefix=$HOME/iv`
 * `make -j`
 * `sudo make install -j`
 * `cd ..`
