@@ -13,6 +13,7 @@ NEURON > 7.5 requires readline library:
 * `module load common/mpi/openmpi/3.1.4_gnu-7.3`
 * `module load common/compilers/gcc/7.3.1`
 * `rpm -q ncurses`
+* `wget http://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/p/python36-Cython-0.28.5-1.el7.x86_64.rpm`
 
 
 # Anaconda
