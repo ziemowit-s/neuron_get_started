@@ -21,8 +21,6 @@ Since some libs may have conflicting version with NetPyNE it's better to create 
 
 * `conda create --name neuron python=3.6`
 * `conda activate neuron`
-* `pip install matplotlib`
-* `pip install scipy`
 
 # NEURON
 
@@ -64,8 +62,18 @@ Install NetPyNE
 
 * `pip install netpyne`
 
-## If with GUI
-* `pip install netpyne-ui`
+## GUI
+
+  ```python
+  pip install netpyne_ui
+  jupyter nbextension enable --py jupyter_geppetto
+  jupyter serverextension enable --py jupyter_geppetto
+  jupyter nbextension enable --py widgetsnbextension
+  ```
+### GUI Links:
+* https://github.com/MetaCell/NetPyNE-UI
+* GUI WIKI: https://github.com/MetaCell/NetPyNE-UI/wiki
+* GUI Installation steps: https://github.com/MetaCell/NetPyNE-UI/wiki/Pip-installation
 
 # Test all
 
