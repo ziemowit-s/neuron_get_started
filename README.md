@@ -62,7 +62,7 @@ Install NetPyNE
 
 * `pip install netpyne`
 
-## GUI
+## NetPyNE GUI
 
   ```python
   pip install netpyne_ui
@@ -75,7 +75,11 @@ Install NetPyNE
 * GUI WIKI: https://github.com/MetaCell/NetPyNE-UI/wiki
 * GUI Installation steps: https://github.com/MetaCell/NetPyNE-UI/wiki/Pip-installation
 
-# Test all
+### Test GUI
+* In console
+  `NetPyNE-UI`
+
+# Test
 
 * If you want to run it from IDE, preferably start IDE from the console to make sure PYTHONPATH is correctly loaded.
 * run `t1.py`
