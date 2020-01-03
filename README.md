@@ -6,7 +6,7 @@ This README contains installation instruction. For more information check Wiki p
 ## Ubuntu
 NEURON > 7.5 requires readline library:
 
-* `sudo apt-get install libreadline6 libreadline6-dev`
+* `sudo apt-get install libreadline6 libreadline6-dev python-lxml`
 
 ## CentOS
 
@@ -61,6 +61,7 @@ Since some libs may have conflicting version with NetPyNE it's better to create 
 Install NetPyNE
 
 * `pip install netpyne`
+* `pip install pyneuroml`
 
 ## NetPyNE GUI
 
