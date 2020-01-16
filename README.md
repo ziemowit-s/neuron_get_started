@@ -16,13 +16,13 @@ NEURON > 7.5 requires readline library:
 * `wget http://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/p/python36-Cython-0.28.5-1.el7.x86_64.rpm`
 
 
-# Anaconda
+## Anaconda
 Since some libs may have conflicting version with NetPyNE it's better to create a new env called neuron with Python 3.6
 
 * `conda create --name neuron python=3.6`
 * `conda activate neuron`
 
-# NEURON
+# NEURON Installation
 
 ## Ubuntu
 
@@ -57,7 +57,7 @@ Since some libs may have conflicting version with NetPyNE it's better to create 
   * `from neuron import h`
   * if you see that NEURON has started - it works fine
 
-# NetPyNE
+# [Optional] NetPyNE Installation
 Install NetPyNE
 
 * `pip install netpyne`
@@ -80,10 +80,10 @@ Install NetPyNE
 * In console
   `NetPyNE-UI`
 
-# Test
+# Test NetPyNE
 
 * If you want to run it from IDE, preferably start IDE from the console to make sure PYTHONPATH is correctly loaded.
-* run `t1.py`
+* run `netpyne_example.py`
 
 # Documentations
 
@@ -91,7 +91,7 @@ Install NetPyNE
 * NetPyNE: http://netpyne.org/
 
 
-# Add Python NEURON to PyCharm
+# How to use NEURON with PyCharm
 
 ![PyCharm](add_path_to_pycharm.png)
 
