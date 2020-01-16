@@ -1,5 +1,4 @@
-This Repository contains get started instruction how to use NEURON + NetPyNE. 
-This README contains installation instruction. For more information check Wiki page on GitHub.
+This Repository contains instruction how to install NEURON and [Optional] NetPyNE.
 
 # Prerequisites
 
