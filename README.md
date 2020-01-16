@@ -1,4 +1,5 @@
-This Repository contains instruction how to install NEURON and [Optional] NetPyNE.
+README contains instruction how to install NEURON and [Optional] NetPyNE
+Repository contains files to test installation of those tools.
 
 # Prerequisites
 
