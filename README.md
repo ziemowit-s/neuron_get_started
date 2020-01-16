@@ -51,17 +51,19 @@ Since some libs may have conflicting version with NetPyNE it's better to create 
 `export PYTHONPATH="$PYTHONPATH:$HOME/nrn/lib/python/"`
 `export PATH="$PATH:$HOME/nrn/x86_64/bin/"`
 
-## All Linux versions
-* Test NEURON Python in console:
-  * `python`
-  * `from neuron import h`
-  * if you see that NEURON has started - it works fine
+## Test NEURON:
+  * run `neuron_example.py`
 
 # [Optional] NetPyNE Installation
 Install NetPyNE
 
 * `pip install netpyne`
 * `pip install pyneuroml`
+
+## Test NetPyNE
+
+* If you want to run it from IDE, preferably start IDE from the console to make sure PYTHONPATH is correctly loaded.
+* run `netpyne_example.py`
 
 ## NetPyNE GUI
 
@@ -79,11 +81,6 @@ Install NetPyNE
 ### Test GUI
 * In console
   `NetPyNE-UI`
-
-# Test NetPyNE
-
-* If you want to run it from IDE, preferably start IDE from the console to make sure PYTHONPATH is correctly loaded.
-* run `netpyne_example.py`
 
 # Documentations
 
