@@ -2,7 +2,7 @@ README contains instruction how to install NEURON and [Optional] NetPyNE
 Repository contains files to test installation of those tools.
 
 # Prerequisites
-Tested on Python 3.6. 
+Works with Python 3.6. 
 
 Other versions may have different issues, eg. 3.7 have problem with libpython3.7 and pycairo. It is possible to work with 3.7 but running from PyCharm may be error prone.
 
