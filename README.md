@@ -98,5 +98,27 @@ Install NetPyNE
 # Issues
 * for problem with CentOS refer to: https://www.neuron.yale.edu/neuron/download/compile_linux
 
-* If during compiling *.mod file you have an error: `/usr/bin/ld: cannot find -lreadline`
-* `sudo apt-get install libreadline6 libreadline6-dev`
+* libreadline5 issue:
+  * during compiling *.mod file you have an error: `/usr/bin/ld: cannot find -lreadline`
+  * during nrngui run from console you have an error: error while loading shared libraries: libreadline.so.5: cannot open shared object file: No such file or directory
+  * during Python `from neuron import h` you have an error:
+  ```bash
+  Traceback (most recent call last):
+    File "/usr/local/nrn/lib/python/neuron/__init__.py", line 110, in <module>
+      import neuron.hoc
+  ImportError: libreadline.so.5: cannot open shared object file: No such file or directory
+
+  During handling of the above exception, another exception occurred:
+
+  Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+    File "/usr/local/nrn/lib/python/neuron/__init__.py", line 112, in <module>
+      exec("import neuron.hoc%d%d as hoc" % (sys.version_info[0], sys.version_info[1]))
+    File "<string>", line 1, in <module>
+  ModuleNotFoundError: No module named 'neuron.hoc37'
+  ```
+  
+  Install in bash console:
+  ```bash
+  sudo apt-get install libreadline5
+  ```
