@@ -6,7 +6,7 @@ Repository contains files to test installation of those tools.
 ## Ubuntu
 NEURON > 7.5 requires readline library:
 
-* `sudo apt-get install libreadline6 libreadline6-dev python-lxml`
+* `sudo apt install libreadline5 python-lxml`
 
 ## CentOS
 
