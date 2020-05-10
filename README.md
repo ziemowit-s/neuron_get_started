@@ -9,7 +9,11 @@ Other versions may have different issues, eg. 3.7 have problem with libpython3.7
 ## Ubuntu
 NEURON > 7.5 requires readline library:
 
-* `sudo apt install libreadline5 python-lxml`
+Ubuntu 16.04:
+`sudo apt install libreadline5 python-lxml`
+
+Ubuntu 18.04:
+`sudo apt install libreadline-gplv2-dev python-lxml`
 
 ## CentOS
 
