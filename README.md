@@ -28,7 +28,8 @@ Since some libs may have conflicting version with NetPyNE it's better to create 
 
 * `conda create --name neuron python=3.6`
 * `conda activate neuron`
-
+* `cd neuron_netpyne_get_started`
+* `pip install -r requirements.txt`
 # NEURON Installation
 
 ## Ubuntu
