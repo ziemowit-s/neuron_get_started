@@ -104,9 +104,10 @@ Install NetPyNE
 * add the path: /usr/local/nrn/lib/python
 
 # Issues
-* for problem with CentOS refer to: https://www.neuron.yale.edu/neuron/download/compile_linux
 
-* libreadline5 issue:
+###for problem with CentOS refer to: https://www.neuron.yale.edu/neuron/download/compile_linux
+
+### libreadline5 issue:
   * during compiling *.mod file you have an error: `/usr/bin/ld: cannot find -lreadline`
   * during nrngui run from console you have an error: error while loading shared libraries: libreadline.so.5: cannot open shared object file: No such file or directory
   * during Python `from neuron import h` you have an error:
@@ -130,3 +131,10 @@ Install NetPyNE
   ```bash
   sudo apt-get install libreadline5
   ```
+  
+  ### helvetica warning
+  For error: `nrniv: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"`
+  ```
+  sudo apt-get install xfonts-100dpi
+  ```
+  Then logout and login
