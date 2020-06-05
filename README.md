@@ -7,7 +7,7 @@ Works with Python 3.6.
 Other versions may have different issues, eg. 3.7 have problem with libpython3.7 and pycairo. It is possible to work with 3.7 but running from PyCharm may be error prone.
 
 ## Ubuntu
-NEURON > 7.5 requires readline library:
+NEURON > 7.5 requires the following additional libraries:
 
 * Ubuntu 16.04:
   `sudo apt install libreadline5 python-lxml`
