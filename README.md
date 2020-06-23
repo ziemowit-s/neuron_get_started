@@ -15,8 +15,8 @@ NEURON > 7.5 requires the following additional libraries:
 * Ubuntu 18.04:
   `sudo apt install libreadline-gplv2-dev python-lxml`
  
-* Ubuntu 20.04 (I'm not sure python-lxml is required, because without the example also works):
-  `sudo apt-get install libtinfo5 python-lxml`
+* Ubuntu 20.04:
+  `sudo apt-get install libtinfo5 libreadline-gplv2-dev python-lxml`
 
 ## CentOS
 
