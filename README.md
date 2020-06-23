@@ -134,7 +134,20 @@ Install NetPyNE
   ```bash
   sudo apt-get install libreadline5
   ```
+  ### /usr/bin/ld: cannot find -lX11
+  After compiling mod files with nrnivmodl you encounter an error:
+  ```bash
+  /usr/bin/ld: cannot find -lX11
+  ```
+  * check linker:
+  ```bash
+  ld -lX11 --verbose
+  ```
   
+  * Install:
+  ```bash
+  sudo apt-get install libx11-dev:i386 libx11-dev
+  ```
   ### helvetica warning
   For error: `nrniv: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"`
   ```
