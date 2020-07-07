@@ -19,12 +19,15 @@ https://www.neuron.yale.edu/neuron/docs
   * It is possible to work with 3.7 but running from PyCharm may be error prone
 
 #### Ubuntu
-
+NEURON > 7.5 requires the following additional libraries:
 * Ubuntu 16.04 install:
   `sudo apt install libreadline5 python-lxml`
 
 * Ubuntu 18.04 install:
   `sudo apt install libreadline-gplv2-dev python-lxml`
+ 
+* Ubuntu 20.04:
+  `sudo apt-get install libtinfo5 libreadline-gplv2-dev python-lxml`
 
 #### CentOS
 Follow those procedures:
@@ -116,14 +119,31 @@ Refer to: https://www.neuron.yale.edu/neuron/download/compile_linux
   ```bash
   sudo apt-get install libreadline5
   ```
+
+#### Ubuntu: X11 error
+  * After compiling MOD files with `nrnivmodl` you encounter the error:
+  ```bash
+  /usr/bin/ld: cannot find -lX11
+  ```
+  * check linker:
+  ```bash
+  ld -lX11 --verbose
+  ```
   
-  #### Helvetica warning
+  * Install:
+  ```bash
+  sudo apt-get install libx11-dev:i386 libx11-dev
+  ```
+  
+#### Helvetica warning
   * During each NEURON run you may face error such as: 
-  `nrniv: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"`
+  ```bash
+  nrniv: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"
+  ```
   
   * To solve it you must install helvetica font specified in the warning
   
-  ###### For Ubuntu:
+##### Solving Helvetica warning in Ubuntu:
   ```
   sudo apt-get install xfonts-100dpi
   ```
