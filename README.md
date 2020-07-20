@@ -4,12 +4,12 @@ The repository also contains file to test the installation on all operating syst
 NEURON should work with: most Linux distributions, Windows and OSX, however prerequisites 
 installations and trouble solving concentrate here on Ubuntu.
 
-#### NEURON Documentation
+### NEURON Documentation
 https://www.neuron.yale.edu/neuron/docs
 
 ## Prerequisites
 
-#### Python
+### Python
 
 * Works with Python: 3.5 and 3.6 
 * It is recommended to work with Python 3.6
@@ -18,7 +18,7 @@ https://www.neuron.yale.edu/neuron/docs
   * Python 3.7 have problem with libpython3.7 and pycairo on Ubuntu. 
   * It is possible to work with 3.7 but running from PyCharm may be error prone
 
-#### Ubuntu
+### Ubuntu
 NEURON > 7.5 requires the following additional libraries:
 * Ubuntu 16.04 install:
   `sudo apt install libreadline5 python-lxml`
@@ -29,14 +29,14 @@ NEURON > 7.5 requires the following additional libraries:
 * Ubuntu 20.04:
   `sudo apt-get install libtinfo5 libreadline-gplv2-dev python-lxml`
 
-#### CentOS
+### CentOS
 Follow those procedures:
 * `module load common/mpi/openmpi/3.1.4_gnu-7.3`
 * `module load common/compilers/gcc/7.3.1`
 * `rpm -q ncurses`
 * `wget http://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/p/python36-Cython-0.28.5-1.el7.x86_64.rpm`
 
-#### Anadonda
+### Anadonda
 
 * It is recommended to install Anaconda: https://www.anaconda.com/products/individual
 
@@ -46,26 +46,26 @@ Follow those procedures:
   * `cd neuron_netpyne_get_started`
   * `pip install -r requirements.txt`
 
-## NEURON Installation
+# NEURON Installation
 
-#### Ubuntu
+### Ubuntu
 
-##### Python-only installation
+#### Python-only installation
 * `pip install neuron`
 
-##### Full Neuron installation
+#### Full Neuron installation
 * Allows to use `nrngui`, `nrnivmodl` as well as run HOC files from the console
 * Download `*.deb` from https://www.neuron.yale.edu/neuron/download
 * `dpkg -i neuron.deb`
 * add to ~/.bashrc: 
 `export PYTHONPATH="$PYTHONPATH:/usr/local/nrn/lib/python/"`
 
-#### CentOS
+### CentOS
 
-##### Python-only installation
+#### Python-only installation
 * `pip install neuron`
 
-##### Full Neuron installation
+#### Full Neuron installation
 * Download `nrn*.tar.gz` from https://neuron.yale.edu/ftp/neuron/versions/
 * extract to `nrn_source`
 * Download `iv*.tar.gz` from https://neuron.yale.edu/ftp/neuron/versions/
@@ -84,11 +84,11 @@ Follow those procedures:
 `export PYTHONPATH="$PYTHONPATH:$HOME/nrn/lib/python/"`
 `export PATH="$PATH:$HOME/nrn/x86_64/bin/"`
 
-#### Test NEURON installation for all OS:
+### Test NEURON installation for all OS:
   * run `python neuron_example.py`
   * if you see no errors - it works fine
 
-## How to use NEURON with PyCharm
+# How to use NEURON with PyCharm
 
 ![PyCharm](add_path_to_pycharm.png)
 
@@ -99,12 +99,12 @@ The image above shows where you need to go through settings, you can also follow
   * click "Show paths for the selected interpreter"
   * add the path: /usr/local/nrn/lib/python
 
-## Known issues
+# Known issues
 
-### CentOS 
+## CentOS 
 Refer to: https://www.neuron.yale.edu/neuron/download/compile_linux
 
-### libreadline5 issue:
+## libreadline5 issue:
   * during compiling *.mod file you have an error: `/usr/bin/ld: cannot find -lreadline`
   * during nrngui run from console you have an error: error while loading shared libraries: libreadline.so.5: cannot open shared object file: No such file or directory
   * during Python `from neuron import h` you have an error:
@@ -129,7 +129,7 @@ Refer to: https://www.neuron.yale.edu/neuron/download/compile_linux
   sudo apt-get install libreadline5
   ```
 
-#### Ubuntu: X11 error
+### Ubuntu: X11 error
   * After compiling MOD files with `nrnivmodl` you encounter the error:
   ```bash
   /usr/bin/ld: cannot find -lX11
@@ -144,7 +144,7 @@ Refer to: https://www.neuron.yale.edu/neuron/download/compile_linux
   sudo apt-get install libx11-dev:i386 libx11-dev
   ```
   
-#### Helvetica warning
+### Helvetica warning
   * During each NEURON run you may face error such as: 
   ```bash
   nrniv: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"
@@ -152,7 +152,7 @@ Refer to: https://www.neuron.yale.edu/neuron/download/compile_linux
   
   * To solve it you must install helvetica font specified in the warning
   
-##### Solving Helvetica warning in Ubuntu:
+#### Solving Helvetica warning in Ubuntu:
   ```
   sudo apt-get install xfonts-100dpi
   ```
