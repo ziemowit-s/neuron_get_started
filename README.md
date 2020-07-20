@@ -88,7 +88,9 @@ Follow those procedures:
   * run `python neuron_example.py`
   * if you see no errors - it works fine
 
-# How to use NEURON with PyCharm
+# Using NEURON with PyCharm
+* For Python-only installation it should work out-of-the-box
+* For full NEURON installation - follow steps below:
 
 ![PyCharm](add_path_to_pycharm.png)
 
