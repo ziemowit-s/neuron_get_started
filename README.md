@@ -50,6 +50,11 @@ Follow those procedures:
 
 #### Ubuntu
 
+##### Python-only installation
+* `pip install neuron`
+
+##### Full Neuron installation
+* Allows to use `nrngui`, `nrnivmodl` as well as run HOC files from the console
 * Download `*.deb` from https://www.neuron.yale.edu/neuron/download
 * `dpkg -i neuron.deb`
 * add to ~/.bashrc: 
@@ -57,6 +62,10 @@ Follow those procedures:
 
 #### CentOS
 
+##### Python-only installation
+* `pip install neuron`
+
+##### Full Neuron installation
 * Download `nrn*.tar.gz` from https://neuron.yale.edu/ftp/neuron/versions/
 * extract to `nrn_source`
 * Download `iv*.tar.gz` from https://neuron.yale.edu/ftp/neuron/versions/
